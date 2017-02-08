@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>webpack auto config</title>
+    <meta name="description" content="Source code generated using layoutit.com"/>
+    <meta name="author" content="LayoutIt!"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+  			<h4>webpack配置选择</h4>
+			<form class="form-horizontal" role="form">				
+				<!-- <div class="form-group">					 				
+					<div class="col-sm-1 mt6">
+						<input type="checkbox" name="extracttext" autocomplete="off" />
+					</div>
+					<label for="inputPassword3" class="col-sm-4 textLeft control-label">
+						css文件提取
+					</label>					
+				</div> -->
+				<div class="form-group mb0">					 					
+					<label for="inputPassword3" class="col-sm-3 textLeft control-label">
+						常规
+					</label>
+				</div>
+				<div class="form-group">							
+					<div class="col-sm-10 mt6 col-sm-offset-1">	
+						<input type="checkbox" name="sourcemap" autocomplete="off" />
+						<label for="inputPassword3" class="textLeft control-label">
+							source map
+						</label>					
+					</div>
+				</div>
+				
+				<!-- <div class="form-group">					 				
+					<div class="col-sm-1 mt6">
+						<input type="checkbox" name="options" autocomplete="off" />
+					</div>
+					<label for="inputPassword3" class="col-sm-4 textLeft control-label">
+						commonChunk						
+					</label>					
+				</div> -->
+				
+				<!-- <div class="form-group">					 				
+					<div class="col-sm-1 mt6">
+						<input type="checkbox" name="options" autocomplete="off" />
+					</div>
+					<label for="inputPassword3" class="col-sm-4 textLeft control-label">
+						分开打包
+					</label>					
+				</div> -->
+				<div class="form-group mb0">					 					
+					<label for="inputPassword3" class="col-sm-3 textLeft control-label">
+						加载文件
+					</label>
+				</div>
+				<div class="form-group">							
+					<div class="col-sm-10 mt6 col-sm-offset-1">						
+						<div class="col-sm-3">
+							<label for="inputPassword3" class="textLeft control-label">js</label>
+						</div>						
+						<div class="col-sm-3">								
+							<input type="checkbox" name="loaderJs" autocomplete="off" />							
+							<label for="inputPassword3" class="textLeft control-label">ES6</label>							
+						</div>
+						
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-10 mt6 col-sm-offset-1">	
+						<div class="col-sm-3">
+							<label for="inputPassword3" class="textLeft control-label">css文件</label>
+						</div>
+
+						<div class="col-sm-3">							
+							<input type="checkbox" name="loaderCss" autocomplete="off" />
+							<label for="inputPassword3" class="textLeft control-label">
+								css							
+							</label>
+						</div>						
+						<div class="col-sm-3">							
+							<input type="checkbox" name="loaderScss" autocomplete="off" />
+							<label for="inputPassword3" class="textLeft control-label">
+								scss							
+							</label>
+						</div>
+						<div class="col-sm-3">
+							<input type="checkbox" name="options" autocomplete="off" />
+							<label for="inputPassword3" class="textLeft control-label">
+								less							
+							</label>
+						</div>
+					</div>					
+				</div>	
+				<div class="form-group">
+					<div class="col-sm-10 mt6 col-sm-offset-1">
+						<div class="col-sm-3">
+							<label for="inputPassword3" class="textLeft control-label">图片</label>
+						</div>			
+						<div class="col-sm-3">
+							<input type="checkbox" name="loaderPngJpg" autocomplete="off" />
+							<label for="inputPassword3" class="textLeft control-label">
+								png							
+							</label>
+						</div>
+						<div class="col-sm-4">
+							<input type="checkbox" name="loaderPngJpg" autocomplete="off" />
+							<label for="inputPassword3" class="textLeft control-label">
+								jpg							
+							</label>
+						</div>
+					</div>					
+				</div>
+				<div class="form-group">
+					<div class="col-sm-10 mt6 col-sm-offset-1">
+						<div class="col-sm-3">
+							<label for="inputPassword3" class="textLeft control-label">模板</label>
+						</div>	
+						<div class="col-sm-3">
+							<input type="checkbox" name="loaderJsx" autocomplete="off" />
+							<label for="inputPassword3" class="textLeft control-label" />
+								jsx							
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group mb0">					 					
+					<label for="inputPassword3" class="col-sm-3 textLeft control-label">
+						插件
+					</label>
+				</div>
+				<div class="form-group">							
+					<div class="col-sm-10 mt6 col-sm-offset-1">
+						<input type="checkbox" name="autoRequire" autocomplete="off" />					
+						<label for="inputPassword3" class="textLeft control-label">
+							自动require
+						</label>					
+					</div>
+				</div>
+				<!-- <div class="form-group">							
+					<div class="col-sm-10 mt6 col-sm-offset-1">
+						<input type="checkbox" name="autoRequire" autocomplete="off" />					
+						<label for="inputPassword3" class="textLeft control-label">
+							自动require
+						</label>					
+					</div>
+				</div> -->
+
+			</form>
+		</div>
+		<div class="col-md-5">
+			<form role="form">
+				<div class="form-group">					 
+					<h4 for="exampleInputEmail1">
+						webpack.config.js
+					</h4>
+					<textarea class="form-control" id="config" rows="35"></textarea>
+				</div>				
+			</form>
+		</div>
+		<div class="col-md-3">
+			<form role="form">
+				<div class="form-group">					 
+					<h4 for="exampleInputEmail1">
+						pageage.json依赖包
+					</h4>
+					<textarea class="form-control" id="package" rows="35"></textarea>
+				</div>				
+			</form>
+		</div>
+
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
