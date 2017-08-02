@@ -1,0 +1,155 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'merge-descriptors' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose cache add [ 'merge-descriptors', null ]
+5 verbose cache add name=undefined spec="merge-descriptors" args=["merge-descriptors",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'merge-descriptors',
+6 verbose parsed url   path: 'merge-descriptors',
+6 verbose parsed url   href: 'merge-descriptors' }
+7 silly lockFile 438ef48e-merge-descriptors merge-descriptors
+8 verbose lock merge-descriptors /Users/niuben/.npm/438ef48e-merge-descriptors.lock
+9 silly lockFile 438ef48e-merge-descriptors merge-descriptors
+10 silly lockFile 438ef48e-merge-descriptors merge-descriptors
+11 verbose addNamed [ 'merge-descriptors', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 97d30aa7-merge-descriptors merge-descriptors@
+14 verbose lock merge-descriptors@ /Users/niuben/.npm/97d30aa7-merge-descriptors.lock
+15 silly addNameRange { name: 'merge-descriptors', range: '*', hasData: false }
+16 verbose request where is /merge-descriptors
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id dd898418c142e765
+19 verbose url raw /merge-descriptors
+20 verbose url resolving [ 'https://registry.npmjs.org/', './merge-descriptors' ]
+21 verbose url resolved https://registry.npmjs.org/merge-descriptors
+22 verbose request where is https://registry.npmjs.org/merge-descriptors
+23 info trying registry request attempt 1 at 22:12:21
+24 verbose etag "21I5UON7XT8G7C2VCVADE62VI"
+25 http GET https://registry.npmjs.org/merge-descriptors
+26 http 304 https://registry.npmjs.org/merge-descriptors
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Mon, 06 Apr 2015 14:12:22 GMT',
+27 silly registry.get     server: 'Apache',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'last-modified': 'Mon, 06 Apr 2015 14:12:22 GMT',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"21I5UON7XT8G7C2VCVADE62VI"',
+27 silly registry.get     age: '18',
+27 silly registry.get     'x-served-by': 'cache-nrt6123-NRT',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1428329542.597856,VS0,VE0',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'content-length': '0',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 verbose etag https://registry.npmjs.org/merge-descriptors from cache
+29 silly addNameRange number 2 { name: 'merge-descriptors', range: '*', hasData: true }
+30 silly addNameRange versions [ 'merge-descriptors', [ '0.0.1', '0.0.2', '1.0.0' ] ]
+31 verbose addNamed [ 'merge-descriptors', '1.0.0' ]
+32 verbose addNamed [ '1.0.0', '1.0.0' ]
+33 silly lockFile edc60b6c-merge-descriptors-1-0-0 merge-descriptors@1.0.0
+34 verbose lock merge-descriptors@1.0.0 /Users/niuben/.npm/edc60b6c-merge-descriptors-1-0-0.lock
+35 silly lockFile edc60b6c-merge-descriptors-1-0-0 merge-descriptors@1.0.0
+36 silly lockFile edc60b6c-merge-descriptors-1-0-0 merge-descriptors@1.0.0
+37 silly lockFile 97d30aa7-merge-descriptors merge-descriptors@
+38 silly lockFile 97d30aa7-merge-descriptors merge-descriptors@
+39 silly resolved [ { name: 'merge-descriptors',
+39 silly resolved     description: 'Merge objects using descriptors',
+39 silly resolved     version: '1.0.0',
+39 silly resolved     author:
+39 silly resolved      { name: 'Jonathan Ong',
+39 silly resolved        email: 'me@jongleberry.com',
+39 silly resolved        url: 'http://jongleberry.com' },
+39 silly resolved     contributors: [ [Object] ],
+39 silly resolved     license: 'MIT',
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'https://github.com/component/merge-descriptors.git' },
+39 silly resolved     bugs: { url: 'https://github.com/component/merge-descriptors/issues' },
+39 silly resolved     files: [ 'LICENSE', 'README.md', 'index.js' ],
+39 silly resolved     gitHead: '81d7a3c14099884c391bd237d7d8edf23c6d6f18',
+39 silly resolved     homepage: 'https://github.com/component/merge-descriptors',
+39 silly resolved     _id: 'merge-descriptors@1.0.0',
+39 silly resolved     scripts: {},
+39 silly resolved     _shasum: '2169cf7538e1b0cc87fb88e1502d8474bbf79864',
+39 silly resolved     _from: 'merge-descriptors@',
+39 silly resolved     _npmVersion: '1.4.28',
+39 silly resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+39 silly resolved     maintainers:
+39 silly resolved      [ [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object] ],
+39 silly resolved     dist:
+39 silly resolved      { shasum: '2169cf7538e1b0cc87fb88e1502d8474bbf79864',
+39 silly resolved        tarball: 'http://registry.npmjs.org/merge-descriptors/-/merge-descriptors-1.0.0.tgz' },
+39 silly resolved     directories: {},
+39 silly resolved     _resolved: 'https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-1.0.0.tgz',
+39 silly resolved     readme: 'ERROR: No README data found!' } ]
+40 info install merge-descriptors@1.0.0 into /usr/local/lib
+41 info installOne merge-descriptors@1.0.0
+42 verbose lib/node_modules/merge-descriptors unbuild
+43 verbose tar unpack /Users/niuben/.npm/merge-descriptors/1.0.0/package.tgz
+44 silly lockFile 216745ed-b-node-modules-merge-descriptors tar:///usr/local/lib/node_modules/merge-descriptors
+45 verbose lock tar:///usr/local/lib/node_modules/merge-descriptors /Users/niuben/.npm/216745ed-b-node-modules-merge-descriptors.lock
+46 silly lockFile aa92905b-ge-descriptors-1-0-0-package-tgz tar:///Users/niuben/.npm/merge-descriptors/1.0.0/package.tgz
+47 verbose lock tar:///Users/niuben/.npm/merge-descriptors/1.0.0/package.tgz /Users/niuben/.npm/aa92905b-ge-descriptors-1-0-0-package-tgz.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 error Error: EACCES, mkdir '/usr/local/lib/node_modules/merge-descriptors'
+49 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/merge-descriptors']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/usr/local/lib/node_modules/merge-descriptors',
+49 error   fstream_type: 'Directory',
+49 error   fstream_path: '/usr/local/lib/node_modules/merge-descriptors',
+49 error   fstream_class: 'DirWriter',
+49 error   fstream_stack:
+49 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+49 error      'Object.oncomplete (fs.js:108:15)' ] }
+50 error Please try running this command again as root/Administrator.
+51 error System Darwin 14.0.0
+52 error command "node" "/usr/local/bin/npm" "install" "-g" "merge-descriptors"
+53 error cwd /Users/niuben/www/jianzhi/balijiaqi/code
+54 error node -v v0.10.35
+55 error npm -v 1.4.28
+56 error path /usr/local/lib/node_modules/merge-descriptors
+57 error fstream_path /usr/local/lib/node_modules/merge-descriptors
+58 error fstream_type Directory
+59 error fstream_class DirWriter
+60 error code EACCES
+61 error errno 3
+62 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/merge-descriptors'
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+63 error fstream_stack Object.oncomplete (fs.js:108:15)
+64 verbose exit [ 3, true ]

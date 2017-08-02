@@ -1,0 +1,299 @@
+@bgColor: #bfe7f1;
+@baseImgUrl: "../img/";
+
+.edge (@distance: 0) {
+	margin: @distance;
+	padding: @distance;
+}
+.mess (@width; @height; @imgUrl; @opacity: 0) {	
+	opacity: @opacity;
+	width: @width;
+	height: @height;
+	background-image: url("../img/@{imgUrl}");
+	background-size: @width @height;
+}
+.size (@width, @height) {
+	width: @width;
+	height: @height;
+}
+.center (@width) {
+	left: 50%;
+	margin-left: -@width;
+}
+
+.appearance (@value: none) {
+	-webkit-appearance: @value;
+	appearance: @value;
+}
+.font-smoothing (@value: antialiased){
+	-webkit-font-smoothing: @value;
+	font-smoothing: @value;
+}
+.text-rendering (@value: optimizeLegibility){
+	-webkit-text-rendering: @value;
+	text-rendering: @value;
+}
+
+.linear-gradient (@from; @to; @ieFrom; @ieTo; @unsupported) {
+	background: @unsupported;
+	background: -webkit-gradient(linear, left top, left bottom, from(@from),to(@to));
+	background: -webkit-linear-gradient(top, @from, @to);
+	background: linear-gradient(top, @from, @to);
+}
+.box-sizing (@value: border-box){
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.transition (@property: all; @during: 1s; @timing-function: cubic-bezier(0, 1.0, 0.5, 1.0); @delay: 0) {
+	-webkit-transition: @property @during @timing-function @delay;
+	transition: @property @during @timing-function @delay;
+}
+
+.transform(@value){
+	-webkit-transform: @value;
+	transform: @value;
+}
+.transform-origin(@value){
+	-webkit-transform-origin: @value;
+	transform-origin: @value;
+}
+.animation( @value ){
+	-webkit-animation: @value;
+	animation: @value;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+/* 动画效果列表，用户通过传入相应参数，进行调用 */
+
+/* 隐藏显示 */
+.show(@name) {
+	@-webkit-keyframes @name {
+		0% {
+			opacity: 0; 
+		}
+		100% {
+			opacity: 1; 
+		}
+	}
+}
+
+.hide(@name) {
+	@-webkit-keyframes @name {
+		0% {
+			opacity: 1; 
+		}
+		100% {
+			opacity: 0; 
+		}
+	}
+}
+
+
+/* 滑动显示，分别是向下, 向左, 向右 */
+.slideTopShow(@name, @top, @topend){
+	@-webkit-keyframes @name {
+		0% {
+			opacity: 0; 
+			margin-top: @top;
+		}		
+		100% {
+			opacity: 1; 
+			margin-top: @topend;
+		}
+	} 
+}
+
+/* left 小于 leftEnd */
+.slideRightShow(@name, @right, @rightEnd){
+	@-webkit-keyframes @name {
+		0%  {opacity: 0; margin-right: @right;}		
+		100%{opacity: 1; margin-right: @rightEnd;}
+	}
+}
+
+/* left 大于 leftEnd */
+.slideLeftShow(@name, @left, @leftEnd){
+	@-webkit-keyframes @name {
+		0%  {opacity: 0; margin-left: @left;}		
+		100%{opacity: 1; margin-left: @leftEnd;}
+	}
+}
+
+/* top 小于 topEnd */
+.sliderDownShow(@name, @top, @topEnd) {	
+	@-webkit-keyframes @name {
+		0%  {opacity: 0; margin-top: @top;}	
+		100%{opacity: 1; margin-top: @topEnd;}
+	}
+}
+.slideYHide(@name, @top, @topend){
+	@-webkit-keyframes @name {
+		0% {
+			opacity: 1; 
+			margin-top: @top;
+		}		
+		100% {
+			opacity: 0; 
+			margin-top: @topend;
+		}
+	} 
+}
+
+/* 向X轴Y轴同时位移*/
+.slideXY(@name, @startX, @startY, @endX, @endY) {
+	@-webkit-keyframes @name {
+		0% {
+
+			margin-left: @startX;
+			margin-top: @startY;
+		}	
+
+		100% {
+			opacity: 1;
+			margin-left: @endX;
+			margin-top: @endY;
+		}
+	}
+}
+
+.slideRightTop(@name, @startRight, @startTop, @endRight, @endTop) {
+	@-webkit-keyframes @name {
+		0% {
+
+			margin-right: @startRight;
+			margin-top: @startTop;
+		}	
+
+		100% {
+			opacity: 1;
+			margin-right: @endRight;
+			margin-top: @endTop;
+		}
+	}
+}
+
+
+/* 旋转样式，左右旋转，抖动等 */
+.loopRotate(@name, @startDeg, @endDeg) {
+	@-webkit-keyframes @name {
+		0% {
+			opacity: 1;
+		}		
+		50% {
+			opacity: 1;
+			.transform(rotate(@startDeg));
+		}		
+		100% {
+			opacity: 1;
+			.transform(rotate(@endDeg));
+		}
+	}
+}
+/* 摆头样式 */
+.headRotate(@name, @deg){
+	@-webkit-keyframes @name {
+		0% {
+			opacity: 1;
+			.transform(rotate(@deg));
+		}		
+		45% {
+			opacity: 1;
+			.transform(rotate(@deg));
+		}
+		55% {
+			opacity: 1;
+			.transform(rotate(-@deg));
+		}		
+		100% {
+			opacity: 1;
+			.transform(rotate(-@deg));
+		}
+	}
+}
+
+.rotate(@name, @deg){
+	@-webkit-keyframes @name {		
+		0% {
+			opacity: 1;
+			.transform(rotate(0));
+		}
+		25% {
+			opacity: 1;
+			.transform(rotate(-@deg));
+		}
+		50% {
+			opacity: 1;
+			.transform(rotate(0));
+		}
+		75% {
+			opacity: 1;
+			.transform(rotate(@deg));
+		}
+		100% {
+			opacity: 1;
+			.transform(rotate(0));
+		}
+	}	
+}
+
+/* 放大缩小 */
+.zoom(@name, @zoom, @zoomEnd) {
+	@-webkit-keyframes @name {		
+		0% {
+			opacity: 1;
+			.transform(scale(@zoom));
+		}		
+		100% {
+			opacity: 1;
+			.transform(scale(@zoomEnd));
+		}
+	}
+}
+.zoomDown(@name, @zoom, @zoomEnd, @top) {
+	@-webkit-keyframes @name {		
+		0% {
+			opacity: 1;
+			margin-top: @top;
+			.transform(scale(@zoom));
+		}		
+		100% {
+			opacity: 1;
+			margin-top: 0px;
+			.transform(scale(@zoomEnd));
+		}
+	}
+}
+.zoomDownRotate(@name, @zoom, @zoomEnd, @top, @rotate) {
+	@-webkit-keyframes @name {		
+		0% {
+			opacity: 1;
+			margin-top: @top;
+			.transform(scale(@zoom) rotate(@rotate));
+		}		
+		100% {
+			opacity: 1;
+			margin-top: 0px;
+			.transform(scale(@zoomEnd) rotate(@rotate));
+		}
+	}
+}
+
+.zoom3(@name, @zoom, @zoomMid, @zoomEnd) {
+	@-webkit-keyframes @name {		
+		0% {
+			opacity: 1;
+			.transform(scale(@zoom));
+		}				
+		50% {
+			opacity: 1;
+			.transform(scale(@zoomEnd));
+		}
+		100% {
+			opacity: 1;
+			.transform(scale(@zoomMid));
+		}
+
+	}
+}

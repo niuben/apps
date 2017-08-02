@@ -1,0 +1,9 @@
+{
+	"name": "video-analysis",
+	"version": "0.0.1",
+	"description": "百度视频月度数据报告",
+	"keywords": [
+		"video",
+		"analysis"
+	]
+}

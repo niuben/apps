@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1,width=device-width, maximum-scale=1.0, user-scalable=no">
+	<title>《巴黎假期》先导发布会 邀您参加 </title>
+	<script src="libs/mod.js"></script>	
+</head>
+<body>
+	<!-- <img src="app/img/logo.jpg" style="height:0px;width:0px;"/> -->
+	<!-- <div class="firstPage" id="firstPage">		
+		<div class="loading"></div>
+	</div>
+ -->
+	<div class="cloud">
+		<img src="app/img/balijiaqi.jpg" style="width:0px;height:0px" />
+		<span class="cloud-big "></span>
+		<span class="cloud-big cloud-big1"></span>
+		<span class="cloud-big cloud-big2"></span>		
+		<span class="cloud-big cloud-big3"></span>		
+		<span class="cloud-small"></span>
+		<span class="cloud-small cloud-small1"></span>
+		<span class="cloud-small cloud-small2"></span>
+		<span class="cloud-small cloud-small3"></span>
+	</div>
+	<!-- 
+	<div class="firstPage" id="firstPage">		
+		<span class="logo">
+			<img src="app/img/logo.png" />
+		</span>
+		<span class="subTitle"></span>
+		<div class="earth">			
+			<span class="china"></span>
+			<span class="france"></span>
+			<span class="plane"></span>
+		</div>
+		<span class="door"></span>			
+	    <span class="temple"></span>		
+	</div> -->
+	<div class="js-page-content content">
+		<section id="page1">
+			<img src="app/img/logo.png" class="logo"/>			
+			<span class="subTitle"></span>
+			<div class="earth">			
+				<span class="china"></span>
+				<span class="france"></span>
+				<span class="plane"></span>
+			</div>
+			<span class="door"></span>			
+		    <span class="temple"></span>
+		</section>
+		<section id="page2">						
+			<span class="leftText"></span>
+			<span class="rightText"></span>			
+		</section>
+		
+		<section id="page3">			
+			<span class="leftText"></span>
+			<span class="rightText"></span>	
+			<span class="star"></span>	
+			<span class="star1"></span>			
+			<span class="head"></span>	
+			<span class="head1"></span>
+		</section>
+		<section id="page4">
+			<span class="text"></span>
+			<span class="line"></span>
+			<span class="heart"></span>
+			<span class="head3"></span>						
+			<span class="head2"></span>
+		</section>
+		<section id="page5">
+			<span class="year"></span>
+			<span class="text4"></span>			
+		</section>
+		<section id="page6">
+			<span class="logo1"></span>
+			<span class="text5"></span>
+			<div class="message">
+				<p>地址：北京朝阳区光华路1号北京嘉里大酒店2层 </p>
+				<p>签到时间：4月8日 14:00 </p>				
+				<p>活动时间：4月8日 14:30 </p>
+			</div>
+		</section>		
+		<a id="next" class="next" href="javascript:"></a>
+	</div>
+	<!-- <div class="logo"></div> -->
+	<div class="music"></div>
+	
+	<!-- <div class="tips none">
+		<div class="arrow">
+		<img src="app/img/tips-point.png" />
+		</div>
+		<div class="tips-title">分享可爱的你首映，请点击这里 选择“分享到朋友圈”</div>
+		<div class="tips-image">
+			<img src="app/img/tips-image.jpg" />
+		</div>			
+	</div>
+ -->
+	<audio src="" preload="preload" />
+
+
+	<script id="page1-tpl" type="text/template">
+		<img src="app/img/logo.png" class="logo"/>
+		<span class="subTitle"></span>
+		<div class="earth">			
+			<span class="china"></span>
+			<span class="france"></span>
+			<span class="plane"></span>
+		</div>
+		<span class="door"></span>			
+	    <span class="temple"></span>
+	</script>
+	<script id="page2-tpl" type="text/template">
+		<span class="leftText"></span>
+		<span class="rightText"></span>
+						
+	</script>
+	<script id="page3-tpl" type="text/template">
+		<span class="leftText"></span>
+		<span class="rightText"></span>	
+		<span class="star"></span>	
+		<span class="star1"></span>			
+		<span class="head"></span>	
+		<span class="head1"></span>		
+	</script>
+	<script id="page4-tpl" type="text/template">
+		<span class="text"></span>
+		<span class="line"></span>
+		<span class="heart"></span>
+		<span class="head3"></span>						
+		<span class="head2"></span>		
+	</script>
+	<script id="page5-tpl" type="text/template">		 	
+	 	<span class="year"></span>
+		<span class="text4"></span>
+	</script>
+
+	<script id="page6-tpl" type="text/template">
+		<span class="logo1"></span>
+		<span class="text5"></span>
+		<div class="message">
+			<p>地址：北京朝阳区光华路1号北京嘉里大酒店2层 </p>
+			<p>签到时间：4月8日 14:00 </p>				
+			<p>活动时间：4月8日 14:30 </p>
+		</div>		
+	</script>
+	<!--<script id="page6-tpl" type="text/template">
+		<span class="r-chuxi"></span>
+		<span class="r-fabuhui"></span>
+		<div class="r-message">
+			<p>活动日期：2015年3月16日</p>
+			<p>签到时间：16：00 活动时间：16：30</p>
+			<p>活动地点：<a class="goMap" href="http://api.map.baidu.com/marker?location=39.914884,116.476814&title=可爱的你 首映发布会&content=2015年3月16日 16:00 &output=html">北京市朝阳区建国路93号万达索菲特酒店7层</a></p>
+			<p>主办方：北京剧角映画文化传媒有限公司</p>				
+		</div>
+		
+	</script>
+	<script id="page7-tpl" type="text/template">
+		<span class="logo"></span>
+		<span class="head5"></span>
+		<span class="head6"></span>			
+		<span class="share"></span>
+	</script>-->
+
+
+	<script type="text/javascript">
+		require('app/app');		
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?8f102ad51d823e864156436b6a05af8c";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+
+	</script> 
+</body>
+</html>
